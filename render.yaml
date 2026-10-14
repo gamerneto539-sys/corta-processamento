@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: corta-processamento
+    runtime: docker
+    plan: free
+    region: virginia
+    healthCheckPath: /healthz
+    autoDeployTrigger: off
+    envVars:
+      - key: CORTA_BACKEND_TOKEN
+        generateValue: true
+      - key: CORTA_MAX_BYTES
+        value: "268435456"

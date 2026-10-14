@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!cloud
+!cloud/server.py
+!cloud/requirements.txt
+!desktop
+!desktop/engine.py
